@@ -4,7 +4,7 @@ const GifItem = (props) => {
       <img
         className="object-contain"
         src={`https://media2.giphy.com/media/${props.result}/giphy.gif`}
-        alt="asdasd"
+        alt=""
       />
     </div>
   );
