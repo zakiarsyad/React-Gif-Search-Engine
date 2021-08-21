@@ -1,17 +1,12 @@
 import GifItem from "../GifItem";
 
-const GifList = () => {
+const GifList = (props) => {
   return (
-    <div className="h-full w-9/12 m-6 flex flex-wrap">
-      <GifItem />
-      <GifItem />
-      <GifItem />
-      <GifItem />
-      <GifItem />
-      <GifItem />
-      <GifItem />
-      <GifItem />
-      <GifItem />
+    <div className="h-9/12 w-9/12 max-h-32 m-6 flex flex-wrap">
+      {props.result &&
+        props.result.map((gif, i) => {
+          return <GifItem result={gif} key={i} />;
+        })}
     </div>
   );
 };

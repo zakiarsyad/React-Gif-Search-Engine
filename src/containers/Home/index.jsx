@@ -1,12 +1,18 @@
-import logo from "./giphy.png";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
+import logo from "./giphy.png";
+import { clearGifs } from "../../store/actions";
 
 const Home = () => {
+  const dispatch = useDispatch();
+  dispatch(clearGifs());
+
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-center">
       <h1 className="font-black text-3xl mb-10">WELCOME TO YOUR GIPHY</h1>
 
-      <img className="w-1/4 shadow-lg rounded mb-24" src={logo} />
+      <img className="w-1/4 shadow-lg rounded mb-24" src={logo} alt="" />
 
       <Link
         to="/iron-man-giphy"
