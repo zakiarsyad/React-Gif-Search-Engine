@@ -6,8 +6,6 @@ import IronManGiphy from "./containers/IronManGiphy";
 import SearchYourGiphy from "./containers/SearchYourGiphy";
 import store from "./store";
 
-import "./tailwind.css";
-
 const App = () => {
   return (
     <Provider store={store}>

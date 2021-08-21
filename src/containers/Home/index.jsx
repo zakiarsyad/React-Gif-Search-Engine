@@ -9,7 +9,7 @@ const Home = () => {
   dispatch(clearGifs());
 
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center">
+    <div className="w-screen h-screen flex flex-col items-center justify-center md:bg-red-300">
       <h1 className="font-black text-3xl mb-10">WELCOME TO YOUR GIPHY</h1>
 
       <img className="w-1/4 shadow-lg rounded mb-24" src={logo} alt="" />
