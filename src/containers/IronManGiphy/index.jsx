@@ -15,7 +15,7 @@ const IronManGiphy = () => {
     <div className="w-screen flex flex-col items-center">
       <h1 className="font-black text-3xl m-5">IRON MAN GIPHY</h1>
       <div className="h-20"></div>
-      <GifList result={gifs || []} />
+      <GifList result={gifs} />
     </div>
   );
 };
